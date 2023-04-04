@@ -50,6 +50,7 @@ export interface Post {
   body: any;
   /** Rendered body */
   rendered_body?: string;
+  uid: string;
 }
 
 export interface Hero {
@@ -59,19 +60,19 @@ export interface Hero {
   image?: File;
   /** Layout */
   layout:
-    | "Top left"
-    | "Top center"
-    | "Top right"
-    | "Center left"
-    | "Center center"
-    | "Center right"
-    | "Bottom left"
-    | "Bottom center"
-    | "Bottom right";
+    | 'Top left'
+    | 'Top center'
+    | 'Top right'
+    | 'Center left'
+    | 'Center center'
+    | 'Center right'
+    | 'Bottom left'
+    | 'Bottom center'
+    | 'Bottom right';
   /** Content */
   content?: string;
   /** CTA */
   cta?: string;
   /** CTA type */
-  cta_type?: "Button" | "Text";
+  cta_type?: 'Button' | 'Text';
 }
