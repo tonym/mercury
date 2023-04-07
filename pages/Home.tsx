@@ -4,11 +4,6 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
 import usePosts, { UsePosts } from '../hooks/usePosts';
-import { Post } from '../types/csTypes';
-
-export interface Posts {
-  entries: Post[];
-}
 
 export default function Home() {
   const { data, error }: UsePosts = usePosts();
